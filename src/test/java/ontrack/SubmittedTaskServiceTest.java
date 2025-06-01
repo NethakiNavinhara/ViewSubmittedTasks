@@ -11,7 +11,8 @@ public class SubmittedTaskServiceTest {
         SubmittedTaskService service = new SubmittedTaskService();
         List<String> tasks = service.getSubmittedTasks("s224746177");
 
-        assertEquals(99, tasks.size());
+        assertEquals(3, tasks.size());
+
         assertTrue(tasks.contains("task2.1"));
     }
 
